@@ -78,7 +78,15 @@ include("utils.jl")
 
 # Re-export main APIs
 export bayes, avg, pass_at_k, pass_hat_k, g_pass_at_k, g_pass_at_k_tao, mg_pass_at_k  # from eval.jl
-export elo  # from rank.jl
+export Prior, GaussianPrior, LaplacePrior, CauchyPrior, UniformPrior, CustomPrior, EmpiricalPrior
+export mean, bayes, pass_at_k, pass_hat_k, g_pass_at_k_tau, mg_pass_at_k, inverse_difficulty
+export elo, trueskill, glicko
+export bradley_terry, bradley_terry_map, bradley_terry_davidson, bradley_terry_davidson_map, rao_kupper, rao_kupper_map
+export thompson, bayesian_mcmc
+export borda, copeland, win_rate, minimax, schulze, ranked_pairs, kemeny_young, nanson, baldwin, majority_judgment
+export rasch, rasch_map, rasch_2pl, rasch_2pl_map, rasch_3pl, rasch_3pl_map, rasch_mml, rasch_mml_credible, dynamic_irt
+export pagerank, spectral, alpharank, nash, rank_centrality, serial_rank, hodge_rank
+export plackett_luce, plackett_luce_map, davidson_luce, davidson_luce_map, bradley_terry_luce, bradley_terry_luce_map
 export competition_ranks_from_scores  # from utils.jl
 
 end # module Scorio
